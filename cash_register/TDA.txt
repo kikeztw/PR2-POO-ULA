@@ -1,0 +1,48 @@
+Producto que constan de 3 atributos
+no contiene ninguna accion 
+
+Product
+  atributos:
+    Precio (price) - float
+    Nombre (name) - Cadena de caracteres
+    Cantidad (quantity) - entero
+----------------------------------------------
+
+Cliente registra los datos principal del Cliente
+
+Client
+  atributos
+    Nombre (name)- Cadena de caracteres
+    Apellido (lastName) - Cadena de caracteres
+    socicio  (isPartner) - boolean
+
+----------------------------------------------
+TDA Caja registradora (CashRegister)
+
+CashRegister
+  atributos
+    Almacen (Store) -- una pila que acepta productos 
+    Cliente Actual (currentClient) -- Cliente que esta realizando la compra es del tipo de dato Cliente
+    Descuento (discount) -- Descuento que se le da al cliente por ser socio, es del tipo de dato float
+
+  Acciones
+    Obtener el precio del carrito de compras (getShoppingCartPrice) --  precio del carrito de compra con los productos actuales
+    Obtener Cantidad de Productos (getQuantityProduct) --  cantidad de productos que estan registrado en la caja registradoras
+    Obtener Lista de compra (getShoppingCarList) -- Lista de compra registrada en la caja
+    Obtener cliente actual (getCurrentClient) -- Cliente que esta realizando la compra actualmente
+    Obtener descuento (getDiscount) -- Obtener el descuento por ser socio 
+
+    Agregar producto (setProductCart) -- Agrega un nuevo producto a la caja registradora
+    Agregar Cliente (setClient) -- Registra una persona como cliente actual
+
+----------------------------------------------
+
+ProductStore 
+  atributos
+    Almacen (store) -- Lista de productos del negocio
+    Tamaño del almacen (storeSize) -- Tamaño de la lista de producto del negocio
+
+  Acciones
+    Obtener Almacen (getStore) -- obtener la lista de producto del local
+    Obtener un producto (getProductFromTheStore) -- Devuelve un producto seleccionado
+    Obtener tamaño del Almacen (getStoreSize) -- Devuelve el tamaño del almacen
